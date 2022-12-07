@@ -1,0 +1,93 @@
+Funciones bloc:
+
+
+Que es  una funcion?
+una funcion es una linea de codigo que recibe un input, realiza calculos basados en los input y devuelve una salida
+
+
+Extiste 2 tipos de funciones:
+
+Funciones definidas por el usuario:
+Estas son las funciones que define el usuario, tienen que ser distintas a las funciones reservadas del lenguaje
+
+Funciones integradas:
+Estas son funciones estan dadas tambien se les llama funciones de bilbioteca estas bienen defiidas por 
+el paquete del compilador, es decir funciones que estan en las bilbiogecas definidas.
+
+
+para que nos sirven las funciones?
+las funciones nos ayudana  manetener un codigo mas organizado y facil de leer, mas concretamente el objetivo de las 
+funciones es resolver el problema:
+* modularidad (separa un codigo en funciones)
+* abstraccion (poder aislar elementos o codigo y asi no preocuparnos de su trabajo interno)
+* odigo redundante (codigo repetido)
+
+
+Declarar una funcion:
+al declarar una funcion le estamos diciendo al compilador sobre el numero de parametros que esta recibiendo la funcion
+el tipo de retorno de la funcion y el identificador de la funcion;
+example:
+int max(int,int);
+char* call(char b);
+
+
+podemos crear funciones que retornan o no retorna un valor
+en caso de reotornar un valor debemos especificar que tipo de retorno queremos
+
+formas de pasar un parametro a las funciones:
+
+
+1) paso por valor:
+la variable que le pasamos como parametro a la funcion se copia y se almacena en otra direccion de memoria
+por lo que no modifica la variable pasada como parametros si no que es utilizada una copia
+
+void change_num(int num) {
+    num = 10;
+}
+int x = 2;
+// valor de x: 2
+change_num(x);
+// valor de x: 2
+
+2) paso por referencia:
+la variabke original como la variale que se le paso apuntan a la misma direccion de memoria y por lo tanto no hay copia
+con esto podemos modificar la variale que se le pasa como parametro.
+example:
+
+void change_num(int &num) {
+    num = 10;
+}
+int x = 2;
+// valor de x: 2
+change_num(x);
+// valor de x: 10
+
+
+Funcion principal:
+la funcion principal es una funcion. Todo programa c++ debe contener una funcion llamada main
+esta sirve como punto de entrada al programa
+
+
+si queremos pasar algunos parametros a la funcion main por linea de comandos debemos especificar 
+la funcion main con parametros
+int main(int argc, char* const argv[]) { ... return 0; }
+
+
+Sobrecarga de funciones:
+Si queremos crear una funcion con el mismo nombre pero con diferente tipo se conoce como sobrecarga de funciones
+nosotros podemos sobrecargar en c++
+* metodos
+* constructores
+* propiedades indexadas
+
+
+
+Nota: todas las constantes de coma flotante se tratan como dobles, no como flotantes
+
+
+void hola(int);
+void hola(int,int);
+int hola(int);
+void hola();
+
+

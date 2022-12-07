@@ -1,0 +1,6 @@
+C++ Soporta 2 tipos de sobrecarga
+
+
+1) Sobrecarga de funciones:
+es el proceso de tener dos o mas funciones con el mismo nombre pero condiferentes parametros
+2) Sobrecarga de operadores

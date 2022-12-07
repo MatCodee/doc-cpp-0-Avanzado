@@ -1,0 +1,36 @@
+Que son los arreglos?
+Los arreglos son un conjunto de valores o elementos de un mismo tipo almacenados seguidamente en memoria con un tamaño definido
+y que podemos acceder a cada uno de ellos usando el indice.
+
+
+Porque deberiamos usar arreglos?
+
+Ventajas?
+- podemos acceder a cualquier elemento ubicado en una posicion de indice
+
+
+Desventajas?
+- tenemos un limite de tamañp que tenemos que digitar antes, por lo que
+no crece su tamaño en la ejecucion.
+
+Ventajas de un Array en C/C++: 
+
+- Acceso aleatorio de elementos utilizando el índice de matriz.
+- Uso de menos líneas de código, ya que crea una única matriz de múltiples elementos.
+- Fácil acceso a todos los elementos.
+- El recorrido a través de la matriz se vuelve fácil usando un solo bucle.
+- La clasificación se vuelve fácil, ya que se puede lograr escribiendo menos líneas de código.
+
+Desventajas de una matriz en C/C++: 
+
+- Permite ingresar un número fijo de elementos que se decide en el momento de la declaración. 
+A diferencia de una lista enlazada, una matriz en C no es dinámica.
+- La inserción y eliminación de elementos puede resultar costosa, ya que es 
+necesario administrar los elementos de acuerdo con la nueva asignación de memoria
+
+
+El indice de la matriz comiemnza desde 0 hasta la pusicion n-1 es decir [0,n-1] o [0,n)
+
+Los elementos de los arrays se almacenan en ubicaciones de memoria contiguas
+
+
